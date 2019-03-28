@@ -5,9 +5,7 @@ RSpec.describe 'Todos API', type: :request do
   let!(:todos) { create_list(:todo, 10) }
   let(:todo_id) { todos.first.id }
 
-  # Test suite for GET /todos
   describe 'GET /todos' do
-    # make HTTP get request before each example
     before { get '/todos' }
 
     it 'returns todos' do
@@ -51,7 +49,6 @@ RSpec.describe 'Todos API', type: :request do
 
   # Test suite for POST /todos
   describe 'POST /todos' do
-    # valid payload
     let(:valid_attributes) { { title: 'Learn Elm', created_by: '1' } }
 
     context 'when the request is valid' do
