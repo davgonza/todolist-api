@@ -43,7 +43,10 @@ group :development do
 
   gem 'factory_bot_rails', '~> 4.0'
   gem 'database_cleaner'
-  gem 'pg'
+end
+
+group :production do
+  gem 'pg', '~> 0.20'
 end
 
 
