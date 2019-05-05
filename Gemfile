@@ -43,11 +43,14 @@ group :development do
   gem 'database_cleaner'
 end
 
+group :production, :development do
+  gem 'bcrypt', '~> 3.1.7'
+  gem 'jwt'
+end
+
 group :production do
   gem 'pg', '~> 0.20'
 
-  gem 'bcrypt', '~> 3.1.7'
-  gem 'jwt'
 end
 
 
