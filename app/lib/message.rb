@@ -12,7 +12,7 @@ class Message
   end
 
   def self.missing_token
-    'Missing token'
+    'Missing token; Please login or signup here: https://davgonza.github.io/todolist-ui/'
   end
 
   def self.unauthorized
